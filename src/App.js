@@ -30,7 +30,7 @@ useEffect(() => {
     return (
     <div className = "App">
         <form className = "search-form" onSubmit = {getSearch}>
-            <input className = "search-bar" value = {search} onChange = {updateSearch} type = "text" /> 
+            <input className = "search-bar" value = {search} onChange = {updateSearch} type = "text" placeholder = "Enter the name of the country" /> 
             <button className = "search-button" type  = "submit">Search</button>
         </form>
         <div>
