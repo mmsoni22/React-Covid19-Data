@@ -1,38 +1,96 @@
+#root, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .App {
-  text-align: center;
+    min-height: 100vh;
+    background-color: #162B32;
+    text-align: center;
+    justify-content: center;
+}
+.search-bar {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    letter-spacing: 2px;
+    font-size: 15px;
+}   
+.search-button {
+    background:  blueviolet;
+    padding : 10px 20px;
+    color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.country-name {
+    position: relative;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 16px;
+    padding: 16px 25px;
+    color: #fff;
+    font-size: 102px;
+    font-weight: 900;
+    text-shadow: 2px 4px rgba(50,50,70,0.5);
+    text-align: center;
+    box-shadow: 3px 6px rgba(0,0,0,0.2);
 }
+.detail .confirmed {
+    position: relative;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 16px;
+    padding: 16px 25px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    text-shadow: 2px 4px rgba(50,50,70,0.5);
+    text-align: center;
+    box-shadow: 3px 6px rgba(0,0,0,0.2);
+    margin-right: 15px;
+}
+ .detail .recovered {
+    position: relative;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 16px;
+    padding: 16px 25px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    text-shadow: 2px 4px rgba(50,50,70,0.5);
+    text-align: center;
+    box-shadow: 3px 6px rgba(0,0,0,0.2);
+    margin-right: 15px;
+ }
+ .detail .deaths {
+    position: relative;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 16px;
+    padding: 16px 25px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    text-shadow: 2px 4px rgba(50,50,70,0.5);
+    text-align: center;
+    box-shadow: 3px 6px rgba(0,0,0,0.2);
+ }
+ .con {
+     color: yellow
+ }
+ .rec {
+     color: green;
+ }
+ .dec {
+     color: red
+ }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+ @media screen and (max-width: 600px) {
+     .country-name {
+         font-size: 70px;
+     }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ }
